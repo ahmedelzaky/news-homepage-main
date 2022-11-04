@@ -77,6 +77,17 @@ header nav ul li {
   font-size: 16px;
 }
 
+header nav ul li:hover {
+  color: var(--Soft-orange);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+}
+
 /* end of header */
 
 /* start of landing */
@@ -87,9 +98,18 @@ header nav ul li {
   grid-template-areas: "left left left left left right ";
   padding: 30px 20px;
 }
+
+.landing-img-1 {
+  height: 320px;
+}
+.landing-img-2 {
+  display: none;
+}
+
 .landing .container .big-col {
   grid-area: left;
 }
+
 .landing .container .big-col .text {
   display: flex;
 }
@@ -99,7 +119,6 @@ header nav ul li {
   font-weight: 800;
   width: 300px;
   margin-right: 30px;
-
 }
 
 .landing .container .big-col p {
@@ -109,17 +128,23 @@ header nav ul li {
   color: var(--Dark-grayish-blue);
 }
 .landing .container .big-col button {
-    margin-top: 20px;
-    padding: 12px;
-    width: 170px;
-    border: none;
-    background-color: var(--Soft-red);
-    color: white;
-    font-size: 17px;
-    font-weight: 400;
-    cursor: pointer;
-    border-radius: 2px;
-  }
+  margin-top: 20px;
+  padding: 12px;
+  width: 170px;
+  border: none;
+  background-color: var(--Soft-red);
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.text-w{
+  margin-top: 30px;
+}
+.landing .container .big-col button:hover {
+  background-color: var(--Very-dark-blue);
+}
 
 .landing .container .tranding {
   grid-area: right;
@@ -130,22 +155,53 @@ header nav ul li {
   margin-bottom: 20px;
   margin-top: 10px;
   border-top: 2px solid black;
-  
 }
 .landing .container .tranding h2 {
   color: var(--Soft-orange);
   font-size: 35px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .landing .container .tranding h3 {
   color: var(--Off-white);
   margin: 20px 0;
+}
+.landing .container .tranding h3:hover {
+  color: var(--Soft-orange);
+  cursor: pointer;
 }
 .landing .container .tranding p {
   color: var(--Grayish-blue);
   margin: 10px 0;
   line-height: 1.5;
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .landing .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .landing .container .big-col .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .landing-img-1 {
+    display: none;
+  }
+  .landing-img-2 {
+    display: block;
+
+    height: 290px;
+  }
+  .landing .container .big-col p {
+    width: auto;
+  }
+  .landing .container .big-col button {
+    margin: 0;
+    width: 170px;
+    padding: 15px;
+  }
 }
 
 /* end of landing */
@@ -155,7 +211,7 @@ header nav ul li {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   padding-top: 30px;
-  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .grid-holder .small-col {
@@ -170,6 +226,11 @@ header nav ul li {
   display: inline-block;
   font-weight: 700;
   margin-bottom: 10px;
+  font-size: 19px;
+}
+.grid-holder span:hover {
+  color: var(--Soft-orange);
+  cursor: pointer;
 }
 .grid-holder p {
   line-height: 1.5;
@@ -179,5 +240,14 @@ header nav ul li {
 .grid-holder img {
   width: 100px;
   margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .grid-holder .small-col {
+    padding: 15px 0;
+  }
+  .grid-holder p {
+    width: 100%;
+  }
 }
 /* end of grid holder */
