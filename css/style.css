@@ -40,6 +40,9 @@ ul {
 @media (min-width: 768px) {
   .container {
     width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -47,6 +50,9 @@ ul {
 @media (min-width: 992px) {
   .container {
     width: 970px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -86,6 +92,11 @@ header nav ul li:hover {
 }
 
 @media (max-width: 768px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
   header nav ul {
     display: none;
   }
@@ -96,6 +107,10 @@ header nav ul li:hover {
     cursor: pointer;
     position: relative;
     display: block;
+  }
+
+  .menu-icon:hover+ul {
+    
   }
   .menu-icon span {
     background-color: black;
@@ -235,7 +250,7 @@ header nav ul li:hover {
   }
   .landing-img-2 {
     display: block;
-
+    margin: 0 auto;
     height: 290px;
   }
   .landing .container .big-col p {
