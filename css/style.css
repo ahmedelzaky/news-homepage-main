@@ -240,7 +240,7 @@ header nav ul li:hover {
 .landing .container .tranding {
   grid-area: right;
   background-color: var(--Very-dark-blue);
-  padding: 43px 20px;
+  padding: 55px 20px;
 }
 .landing .container .tranding hr {
   margin-bottom: 20px;
