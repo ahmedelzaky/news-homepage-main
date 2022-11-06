@@ -133,9 +133,6 @@ header nav ul li:hover {
     cursor: pointer;
     position: relative;
     display: block;
-  }  
-  .m-nav:hover + .overlay {
-    display: inline;
   }
 
   .show {
