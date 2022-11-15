@@ -67,11 +67,16 @@ ul {
 
 /* start of header */
 
+header .container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  width: 100%;
 }
 
 header nav ul {
